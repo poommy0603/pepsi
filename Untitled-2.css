@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section {
+    background-color: blue;
+    position: relative;
+    width: 100%;
+    min-height: 969px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+nav {
+    position: relative;
+}
+
+ul {
+    display: flex;
+    position: absolute;
+    left: 1340px;
+    justify-content: center;
+    align-items: center;
+    top: 40px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+li {
+    padding: 1px 25px;
+    list-style: none;
+    letter-spacing: -1px;
+}
+
+a {
+    color: #fdfafa;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+nav li {
+    position: relative;
+}
+
+
+li::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0px;
+    background: red;
+    top: 30px;
+    left: 20px;
+    scale: 0.9 1;
+    transition: 0.5s;
+    opacity: -1;
+    z-index: -1;
+}
+
+li:hover::after {
+    width: 65%;
+    height: 2px;
+    opacity: 1;
+    background: red;
+    z-index: 1;
+}
+
+
+
+.logo {
+    margin: 25px;
+    width: 14%;
+    padding: 0px 90px;
+}
+
+
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+
+
+}
+
+.textbox {
+    position: relative;
+    top: 150px;
+    left: 100px;
+    max-width: 800px;
+    height: 50%;
+    display: block;
+}
+
+.textbox h2 {
+    color: #fff;
+    font-size: 100px;
+    line-height: 140px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+
+.textbox h2 span {
+    font-size: 2em;
+    letter-spacing: -10px;
+}
+
+.textbox p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    max-width: 600px;
+    padding: 0px 14px;
+}
+
+.textbox a {
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 40px;
+    background: rgb(218, 53, 53);
+    border-color: white;
+    padding: 15px 25px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-left: 8px;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 10px 3px;
+    transition: .5s;
+    transform: translateY(5px);
+}
+
+.textbox a:hover {
+    color: rgb(0, 38, 255);
+    background-color: rgb(255, 255, 255);
+    transform: translateY(5px);
+}
+
+.imgBox {
+    position: absolute;
+    top: 140px;
+    left: 1555px;
+}
+
+.social {
+    color: #ffffff;
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+    top: 685px;
+    left: 870px;
+    letter-spacing: 20px;
+    cursor: pointer;
+    display: flex;
+    transition: .10s;
+}
+
+.social .yt {
+    position: relative;
+}
+
+.yt::after {
+    content: "";
+    color: red;
+    border-radius: 40px;
+    width: -90px;
+    height: 0px;
+    transition: .2s;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+
+}
+
+.yt:hover::after {
+    border: 1px solid red;
+    border-radius: 40px;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    z-index: -1;
+}
+
+.yt:hover {
+    color: white;
+    z-index: 1;
+}
+
+.social .ig {
+    position: relative;
+    font-size: 28px;
+}
+
+.ig::after {
+    content: "";
+    position: absolute;
+
+    left: -13px;
+    top: -10px;
+    width: -10px;
+    height: 0px;
+    transition: .2s;
+}
+
+.ig:hover::after {
+    background-color: rgb(252, 209, 216);
+    width: 50px;
+    height: 50px;
+    z-index: -1;
+    border-radius: 40px;
+}
+
+.ig:hover {
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+.social .tw {
+    position: relative;
+}
+
+.tw::after {
+    position: absolute;
+    content: "";
+    width: -10px;
+    height: -0px;
+    background: rgb(93, 172, 247);
+    transition: .2s;
+    border-radius: 40px;
+    left: -13px;
+    top: -11px;
+}
+
+.tw:hover::after {
+    width: 49px;
+    height: 49px;
+    background: rgb(93, 172, 247);
+
+    border-radius: 40px;
+    z-index: -1;
+}
+
+.tw:hover {
+    color: rgb(255, 255, 255)8);
+    z-index: 1;
+}
+
+.social .fb {
+    position: relative;
+}
+
+.fb::after {
+    position: absolute;
+    content: "";
+    background-color: rgb(0, 87, 168);
+    border-radius: 40px;
+    width: -10px;
+    height: 0px;
+    left: -12px;
+    top: -10px;
+    transition: .2s;
+}
+
+.fb:hover::after {
+    background-color: rgb(0, 91, 177);
+    color: rgb(0, 132, 255);
+    border-radius: 40px;
+    width: 50px;
+    height: 50px;
+    z-index: -1;
+}
+
+.fb:hover {
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+
+
+
+.pepsis {
+    position: absolute;
+    top: -110px;
+    left: 890px;
+    display: flex;
+    cursor: pointer;
+}
+
+.img1 {
+    position: absolute;
+    left: -140px;
+    transition: .5s;
+}
+
+.img2 {
+    position: absolute;
+    left: 35px;
+    transition: .5s;
+}
+
+.img3 {
+    position: absolute;
+    left: 205px;
+    transition: .5s;
+}
+
+.img1:hover {
+    transform: translateY(-9px);
+}
+
+.img2:hover {
+    transform: translateY(-9px);
+}
+
+.img3:hover {
+    transform: translateY(-9px);
+}

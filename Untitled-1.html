@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Untitled-2.css">
+    <script src="https://kit.fontawesome.com/504d72feaa.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="sec">
+        <nav>
+            <a href="#"><img src="logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#" class="">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#" class="product">Product</a></li>
+                <li><a href="#">More &</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="textbox">
+                <h2>That's What<br><span>I like</span></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nobis voluptate ea commodi hic
+                    mollitia error tempora dolores corporis voluptatibus iusto velit odit, impedit, consequatur
+                    veritatis id accusamus libero ducimus.</p>
+                <a href="#">View products</a>
+            </div>
+            <div class="imgBox">
+                <img src="pepsi001.png" class="pepsi">
+            </div>
+            <div class="social">
+                <div class="ig"><i class="fa-brands fa-instagram"></i></div>
+                <div class="fb"><i class="fa-brands fa-facebook"></i></div>
+                <div class="tw"><i class="fa-brands fa-twitter"></i></div>
+                <div class="yt"><i class="fa-brands fa-youtube"></i></div>
+            </div>
+            <div class="product">
+                <div class="pepsis">
+                    <img src="pepsi002.png" onclick="imgSlider('pepsi002.png'); changebgcolor('#e60c2c')" class="img1"
+                        width="70px">
+                    <img src="pepsi003.png" onclick="imgSlider('pepsi003.png')" ; class="img2" width="70px">
+                    <img src="pepsi001.png" onclick="imgSlider('pepsi001.png')" ; class="img3" width="70px">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.pepsi').src = anything;
+        }
+        function changebgcolor(color) {
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
